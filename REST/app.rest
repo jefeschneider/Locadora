@@ -1,0 +1,76 @@
+###
+POST http://localhost:3000/car
+Content-Type: application/json
+
+{
+"make": "Ford",
+"model": "Mustang",
+"year": 2022,
+"customerId": 1
+}
+
+###
+POST http://localhost:3000/rent
+Content-Type: application/json
+
+{
+"carId": 1,
+"customerId": 1,
+"startDate": "2023-03-27",
+"endDate": "2023-03-29"
+}
+###
+POST http://localhost:3000/return
+Content-Type: application/json
+
+{
+"carId": 1,
+"customerId": 1,
+"endDate": "2023-03-29"
+}
+###
+PUT http://localhost:3000/customer/1
+Content-Type: application/json
+
+{
+"name": "Maria",
+"email": "maria@example.com",
+"phoneNumber": "987-654-3210"
+}
+###
+DELETE http://localhost:3000/car/1
+####
+PUT http://localhost:3000/car/1
+Content-Type: application/json
+
+{
+"make": "Ford",
+"model": "Fusion",
+"year": 2022,
+"customerId": 1
+}
+###
+GET http://localhost:3000/customers
+###
+POST http://localhost:3000/rent
+Content-Type: application/json
+
+{
+"carId": 1,
+"customerId": 1,
+"startDate": "2023-03-27",
+"endDate": "2023-03-29"
+}
+###
+POST http://localhost:3000/return
+Content-Type: application/json
+
+{
+"carId": 1,
+"customerId": 1,
+"endDate": "2023-03-29"
+}
+###
+GET http://localhost:3000/cars
+###
+GET http://localhost:3000/car/1
